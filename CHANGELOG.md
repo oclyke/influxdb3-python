@@ -4,7 +4,7 @@
 
 ### Features
 
-1. [#127](https://github.com/InfluxCommunity/influxdb3-python/pull/127): Support creating client from environment variables
+1. [#127](https://github.com/InfluxCommunity/influxdb3-python/pull/127): Support creating client from environment variables.
 
 ## 0.12.0 [2025-03-26] 
 
