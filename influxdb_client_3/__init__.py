@@ -133,6 +133,9 @@ class InfluxDBClient3:
         :key str password: ``password`` to authenticate via username and password credentials to the InfluxDB 2.x
         :key list[str] profilers: list of enabled Flux profilers
         """
+        if database is None:
+            raise ValueError("Database is required. Please provide a valid database.")
+
         self._org = org if org is not None else "default"
         self._database = database
         self._token = token
