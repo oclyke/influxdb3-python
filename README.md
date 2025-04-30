@@ -199,3 +199,23 @@ table = client.query(
 print(table.to_pandas())
 ```
 You may include your own root certificate in this manner as well.
+
+# Contributing
+
+Tests are run using `pytest`.
+
+```bash
+# Clone the repository
+git clone https://github.com/InfluxCommunity/influxdb3-python
+cd influxdb3-python
+
+# Create a virtual environment and activate it
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Install the package and its dependencies
+pip install -e .[pandas,polars,dataframe,test]
+
+# Run the tests
+python -m pytest .
+```
